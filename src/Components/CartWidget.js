@@ -1,9 +1,10 @@
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import React, { Component } from 'react';
+import { FaShoppingCart } from "react-icons/fa";
 
-const CartWidget = () => {
-    return (
-        <ShoppingCartIcon />
-    );
+class CartWidget extends Component {
+    render() {
+        return <FaShoppingCart className='coral'/>  
+    }
 }
 
 export default CartWidget;

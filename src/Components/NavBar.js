@@ -12,7 +12,7 @@ const Navbar = () => {
                     {/* <a href="#"><img className="logoNav" src="img/brd2.png" alt=""/></a> */}
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Novedades</a></li>
-                <h3>fsdfs</h3>
+                    <CartWidget />
                 </ul>
             </nav>
         </header>
