@@ -1,3 +1,5 @@
+import CartWidget from './CartWidget'
+
 const Navbar = () => {
     return (
         <header>
@@ -10,8 +12,9 @@ const Navbar = () => {
                     {/* <a href="#"><img className="logoNav" src="img/brd2.png" alt=""/></a> */}
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Novedades</a></li>
-                    </ul>
-                </nav>
+                <h3>fsdfs</h3>
+                </ul>
+            </nav>
         </header>
     );
 }
