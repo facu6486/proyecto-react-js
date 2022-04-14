@@ -3,7 +3,7 @@ import { Add, Remove } from '@material-ui/icons';
 import { useEffect, useState } from 'react';
 import { ProductAmountContainer, ProductAmount } from './styledComponents';
 
-const ItemCount = ({ stock = 0, initial = 1,  onAdd }) => {
+const ItemCount = ({ stock, initial,  onAdd }) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
@@ -28,8 +28,8 @@ const ItemCount = ({ stock = 0, initial = 1,  onAdd }) => {
             <Button variant="text" onClick={increment}><Add /></Button>
             {
                 stock
-                ? <Button variant="contained" color="red" onClick={() => onAdd(count)}>Add to Cart</Button>
-                : <Button variant="contained" disabled>Add to Cart</Button>
+                ? <Button variant="outlined" color="success" onClick={() => onAdd(count)}>Add to Cart</Button>
+                : <Button variant="outlined" disabled>Add to Cart</Button>
             }
             
         </ProductAmountContainer>
