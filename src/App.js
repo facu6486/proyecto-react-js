@@ -1,15 +1,9 @@
 import './App.css';
-import Navbar from './Components/NavBar';
-import ItemListContainer from './Components/ItemListContainer';
+import React from 'react';
+import Home from './pages/Home';
 
-// function App() {}
 const App = () => {
-  return (
-    <>
-    <Navbar />
-    <ItemListContainer />
-    </>
-  );
+  return <Home /> ;   
 }
 
 export default App;
