@@ -4,7 +4,7 @@ import { Badge } from "@material-ui/core";
 import { ShoppingCartOutlined } from "@material-ui/icons";
 
 //Declaramos la clase y lo que se va a renderizar
-const CartWidget = () => {  
+const CartWidget = () => {
         return (
             <Badge badgeContent={10} color="primary">
                 <ShoppingCartOutlined style={{color : "white"}}/>

@@ -8,7 +8,7 @@ const NavBar = () => {
         <AppBar color="primary" position="static">
             <Wrapper>
                 <Left>
-                    <Logo>BRD</Logo>
+                    <Link to='/'><Logo>BRD</Logo></Link>
                 </Left>
                 <Center>
                     <Link to='/categoryId/Hamburguesas' style={{textDecoration: "none", color: "white"}}><MenuItem>HAMBURGUESAS</MenuItem></Link>

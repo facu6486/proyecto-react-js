@@ -23,13 +23,13 @@ const ItemListContainer = () => {
     }, [idCategory]);
 
     const onAdd = (qty) => {
-        alert("You have selected " + qty + " items.");
+        alert("Elegiste " + qty + " items.");
     }
 
     return (
         <>  
             <ItemList items={datos} />
-            <ItemCount stock={5} initial={1} onAdd={onAdd} />
+            {/* <ItemCount stock={5} initial={1} onAdd={onAdd} /> */}
         </>
     );
 }

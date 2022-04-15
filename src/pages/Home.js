@@ -5,14 +5,14 @@ import NavBar from "../components/NavBar";
 
 const Home = () => {
     return (
-        <BrowserRouter>
-            <NavBar />
-            <Routes>
-                <Route path='/' element={<ItemListContainer />} />
-                <Route path='/categoryId/:idCategory' element={<ItemListContainer />} />
-                <Route path='/item/:idItem' element={<ItemDetailContainer />} />
-            </Routes>
-        </BrowserRouter>
+            <BrowserRouter>
+                <NavBar />
+                <Routes>
+                    <Route path='/' element={<ItemListContainer />} />
+                    <Route path='/categoryId/:idCategory' element={<ItemListContainer />} />
+                    <Route path='/item/:idItem' element={<ItemDetailContainer />} />
+                </Routes>
+            </BrowserRouter>
     );
 }
 
