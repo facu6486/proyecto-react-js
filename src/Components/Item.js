@@ -2,7 +2,7 @@ import { DescriptionOutlined, InfoOutlined, LocalOfferOutlined } from '@material
 import { Link } from 'react-router-dom';
 import { ProductContainer, Circle, Image, Info, Icon } from './styledComponents';
 
-const Item = ({ id, stock, price, image }) => {
+const Item = ({ id, name, stock, price, image }) => {
     return (
         <ProductContainer>
             <Circle />
@@ -15,7 +15,7 @@ const Item = ({ id, stock, price, image }) => {
                     <DescriptionOutlined />{stock} unid.
                 </Icon>
                 <Icon style={{cursor: "pointer"}}>
-                    <Link to={`/item/${id}`}><InfoOutlined />Details</Link>
+                    <Link to={`/item/${id}`}><InfoOutlined />Detalle</Link>
                 </Icon>
             </Info>
         </ProductContainer>

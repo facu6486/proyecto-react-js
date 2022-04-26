@@ -2,7 +2,6 @@ import Item from "./Item";
 import { ProductsContainer } from './styledComponents';
 
 const ItemList = ({ items }) => {
-    console.log(items)
     return (
         <ProductsContainer>
         {

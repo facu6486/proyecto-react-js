@@ -5,17 +5,17 @@ import { Wrapper, Logo, MenuItem, Left, Center, Right } from './styledComponents
 
 const NavBar = () => {
     return (
-        <AppBar color="primary" position="static">
+        <AppBar position="relative" color= "">
             <Wrapper>
                 <Left>
-                    <Link to='/'><Logo>BRD</Logo></Link>
+                    <Link to='/' style={{textDecoration: "none", color: "coral"}}><Logo>BRD</Logo></Link>
                 </Left>
                 <Center>
-                    <Link to='/categoryId/Hamburguesas' style={{textDecoration: "none", color: "white"}}><MenuItem>HAMBURGUESAS</MenuItem></Link>
-                    <Link to='/categoryId/Acompañamientos' style={{textDecoration: "none", color: "white"}}><MenuItem>ACOMPAÑAMIENTOS</MenuItem></Link>
+                    <Link to='/idCategory/Hamburguesas' style={{textDecoration: "none", color: "coral"}}><MenuItem>HAMBURGUESAS</MenuItem></Link>
+                    <Link to='/categoryId/Acompañamientos' style={{textDecoration: "none", color: "coral"}}><MenuItem>ACOMPAÑAMIENTOS</MenuItem></Link>
                 </Center>
                 <Right>
-                    <MenuItem><CartWidget /></MenuItem>
+                    <MenuItem><Link to='/cart' style={{textDecoration: "none", color: "coral"}}><CartWidget /></Link></MenuItem>
                 </Right>
             </Wrapper>
         </AppBar>
