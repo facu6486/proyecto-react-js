@@ -2,7 +2,9 @@ import ItemList from './ItemList';
 import customFetch from "../utils/customFetch";
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-const { products } = require('../utils/products');
+import { collection, getDocs } from "firebase/firestore";
+import db from '../utils/firebase';
+
 
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
@@ -10,12 +12,14 @@ const ItemListContainer = () => {
 
     //componentDidUpdate
     useEffect(() => {
-        customFetch(500, products.filter(item => {
-            if (idCategory === undefined) return item;
-            return item.categoryId === (idCategory)
-        }))
-            .then(result => setDatos(result))
-            .catch(err => console.log(err))
+        const fetchFirestore = async () => {
+            const querySnapshot = await getDocs(collection(db, "products"));
+            querySnapshot.forEach((doc) => ({
+                id: doc.id,
+                ...doc.data()
+            }));
+        }
+        fetchFirestore();
     }, [ idCategory ]);
 
     //componentWillUnmount
