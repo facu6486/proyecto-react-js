@@ -5,17 +5,19 @@ import { Wrapper, Logo, MenuItem, Left, Center, Right } from './styledComponents
 
 const NavBar = () => {
     return (
-        <AppBar position="relative" color= "primary">
+        <AppBar position="relative" color= "secondary">
             <Wrapper>
                 <Left>
-                    <Link to='/' style={{textDecoration: "none", color: "coral"}}><Logo>BRD</Logo></Link>
+                    <Link to='/' style={{textDecoration: "none", color: "wblack"}}><Logo>BRD</Logo></Link>
                 </Left>
                 <Center>
-                    <Link to='/idCategory/Hamburguesas' style={{textDecoration: "none", color: "coral"}}><MenuItem>HAMBURGUESAS</MenuItem></Link>
-                    <Link to='/categoryId/Acompañamientos' style={{textDecoration: "none", color: "coral"}}><MenuItem>ACOMPAÑAMIENTOS</MenuItem></Link>
+                    <Link to='/category/hamburguesas' style={{textDecoration: "none", color: "wblack"}}><MenuItem>HAMBURGUESAS</MenuItem></Link>
+                    <Link to='/category/acompañamientos' style={{textDecoration: "none", color: "wblack"}}><MenuItem>ACOMPAÑAMIENTOS</MenuItem></Link>
                 </Center>
                 <Right>
-                    <MenuItem><Link to='/cart' style={{textDecoration: "none", color: "coral"}}><CartWidget /></Link></MenuItem>
+                    <MenuItem>Register</MenuItem>
+                    <MenuItem>LogIn</MenuItem>
+                    <MenuItem><Link to='/cart' style={{textDecoration: "none", color: "wblack"}}><CartWidget /></Link></MenuItem>
                 </Right>
             </Wrapper>
         </AppBar>

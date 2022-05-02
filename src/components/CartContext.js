@@ -12,9 +12,9 @@ const CartContextProvider = ({ children }) => {
                 ...cartList,
                 {
                     idItem: item.id,
-                    imgItem: item.image[0],
+                    imgItem: item.image,
                     nameItem: item.name,
-                    costItem: item.price,
+                    costItem: item.cost,
                     qtyItem: qty
                 }
             ]);
@@ -32,7 +32,7 @@ const CartContextProvider = ({ children }) => {
     }
 
     const deleteItem = (id) => {
-        let result = cartList.filter(item => item.idItem != id);
+        let result = cartList.filter(item => item.idItem !== id);
         setCartList(result);
     }
 

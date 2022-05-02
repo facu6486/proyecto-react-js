@@ -1,15 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore} from "firebase/firestore";
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDiF9x2ff2TxAtRnsx9J20AG8kKu9oMRVY",
-    authDomain: "ecomm16980.firebaseapp.com",
-    projectId: "ecomm16980",
-    storageBucket: "ecomm16980.appspot.com",
-    messagingSenderId: "934953575945",
-    appId: "1:934953575945:web:7d24fd78827b35bd7afad8"
+  apiKey: "AIzaSyDNHg2MpPCqZr5sADOGscM1GNkxeDrkllQ",
+  authDomain: "brdreact.firebaseapp.com",
+  projectId: "brdreact",
+  storageBucket: "brdreact.appspot.com",
+  messagingSenderId: "589075529317",
+  appId: "1:589075529317:web:5c86d2ef3097e6155ad08c"
 };
 
 // Initialize Firebase

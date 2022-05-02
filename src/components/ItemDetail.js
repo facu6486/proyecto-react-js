@@ -23,13 +23,13 @@ const ItemDetail = ({ item }) => {
             <DetailContainer>
                 <WrapperDetail>
                     <ImgContainer>
-                        <ImageDetail src={item.image[0]} />
+                        <ImageDetail src={item.image} />
                     </ImgContainer>
                     <InfoContainer>
                         <Title>{item.name}</Title>
                         <Desc>{item.description}</Desc>
-                        <Price>$ {item.price}</Price>
-                        <Desc>{item.stock}unidades en stock</Desc>
+                        <Price>$ {item.cost}</Price>
+                        <Desc>{item.stock}Un en stock</Desc>
                     </InfoContainer>
                     {
                         itemCount === 0
