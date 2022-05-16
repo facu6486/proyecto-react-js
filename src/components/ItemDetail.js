@@ -10,7 +10,7 @@ const ItemDetail = ({ item }) => {
     const test = useContext(CartContext);
 
     const onAdd = (qty) => {
-        alert("Seleccionaste " + qty + " items.");
+        alert("Seleccionaste " + qty + " item(s).");
         setItemCount(qty);
         test.addToCart(item, qty);
     }
@@ -29,7 +29,7 @@ const ItemDetail = ({ item }) => {
                         <Title>{item.name}</Title>
                         <Desc>{item.description}</Desc>
                         <Price>$ {item.cost}</Price>
-                        <Desc>{item.stock}Un en stock</Desc>
+                        <Desc>{item.stock} Unidades en stock</Desc>
                     </InfoContainer>
                     {
                         itemCount === 0

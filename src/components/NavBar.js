@@ -11,7 +11,7 @@ const NavBar = () => {
                     <Link to='/' style={{textDecoration: "none", color: "wblack"}}><Logo>BRD</Logo></Link>
                 </Left>
                 <Center>
-                    <Link to='/category/hamburguesas' style={{textDecoration: "none", color: "wblack"}}><MenuItem>HAMBURGUESAS</MenuItem></Link>
+                    <Link to="/category/hamburguesas" style={{textDecoration: "none", color: "wblack"}}><MenuItem>HAMBURGUESAS</MenuItem></Link>
                     <Link to='/category/acompañamientos' style={{textDecoration: "none", color: "wblack"}}><MenuItem>ACOMPAÑAMIENTOS</MenuItem></Link>
                 </Center>
                 <Right>

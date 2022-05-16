@@ -111,7 +111,7 @@ const Cart = () => {
     }
   
     createOrderInFirestore()
-      .then(result => alert('Your order has been created. Please take note of the ID of your order.\n\n\nOrder ID: ' + result.id + '\n\n'))
+      .then(result => alert('Tu pedido fue creado. Anota el numero de orden, te lo vamos a pedir.\n\n\nNumero de orden: ' + result.id + '\n\n'))
       .catch(err => console.log(err));
   
     test.removeList();
@@ -149,7 +149,7 @@ const Cart = () => {
                                 <ProductAmountContainer>
                                 <ProductAmount>{item.qtyItem} item(s)</ProductAmount>
                                 /
-                                <ProductAmount>$ {item.costItem} each</ProductAmount>
+                                <ProductAmount>$ {item.costItem} cada uno</ProductAmount>
                                 </ProductAmountContainer>
                                 <ProductPrice>$ {test.calcTotalPerItem(item.idItem)} </ProductPrice>
                             </PriceDetail>
