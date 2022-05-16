@@ -4,13 +4,20 @@ import { Link } from 'react-router-dom';
 import ItemCount from './ItemCount';
 import { DetailContainer, WrapperDetail, ImgContainer, ImageDetail, InfoContainer, Title, Desc, Price } from './styledComponents';
 import { CartContext } from './CartContext';
+import Swal from 'sweetalert2'
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
     const test = useContext(CartContext);
 
     const onAdd = (qty) => {
-        alert("Seleccionaste " + qty + " item(s).");
+        // alert("Seleccionaste " + qty + " item(s).");
+        Swal.fire({
+            icon: 'success',
+            title: 'Producto agregado al carrito',
+            showConfirmButton: false,
+            timer: 1500
+          })
         setItemCount(qty);
         test.addToCart(item, qty);
     }
