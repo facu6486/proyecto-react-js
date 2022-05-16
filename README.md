@@ -31,7 +31,7 @@ Es un proyecto de una hamburguesería hecho para el curso de React JS de Coderho
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/facu6486/proyecto-react-js
 ```
 
 Go to the project directory
